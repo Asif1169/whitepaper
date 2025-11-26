@@ -456,7 +456,7 @@ event SwapExecuted(
 ## Ongoing Security Practices
 
 ### Code Auditing
-- Regular security audits by specialized firms
+
 - Continuous monitoring for vulnerabilities
 - Transparent disclosure of findings
 
