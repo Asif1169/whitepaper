@@ -1,9 +1,5 @@
 # MonBridge DEX Aggregator - Summary
 
-## Table of Contents
-
-* [Home](README.md)
-
 ## Overview
 * [Executive Summary](docs/01-executive-summary.md)
 * [Decentralization Model](docs/03-decentralization-model.md)
