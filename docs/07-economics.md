@@ -5,6 +5,7 @@
 ### Base Protocol Fee
 
 **Fee Model**:
+
 ```
 Every swap incurs protocol fee of 0.1%
 
@@ -15,6 +16,7 @@ Protocol receives: 1 USDC
 ```
 
 **Configurable via Fee Divisor**:
+
 ```
 Fee Divisor = 1000 results in 0.1% fee
 Fee Divisor = 2000 results in 0.05% fee
@@ -26,6 +28,7 @@ Formula: Fee % = 100 / Fee Divisor
 ### Multi-Denomination Fee Accumulation
 
 **ETH Swaps**:
+
 ```
 User swaps: 10 ETH → USDC
 
@@ -37,6 +40,7 @@ Execution:
 ```
 
 **Token Swaps**:
+
 ```
 User swaps: 100,000 LINK → USDC
 
@@ -48,6 +52,7 @@ Execution:
 ```
 
 **Token-to-Token Swaps**:
+
 ```
 User swaps: 50,000 USDC → DAI
 
@@ -75,13 +80,14 @@ Swap Details:
 User confirms: "Yes, I accept these terms"
 ```
 
----
+***
 
 ## Revenue Streams
 
 ### Primary Revenue: Swap Volume
 
 **Volume-Based Model**:
+
 ```
 Daily Volume Processed: $100M
 Fee Rate: 0.1%
@@ -92,42 +98,47 @@ Monthly Revenue: $3,000,000
 ```
 
 **Scaling Properties**:
-- Revenue scales linearly with swap volume
-- No per-transaction costs to protocol
-- High-margin business model
+
+* Revenue scales linearly with swap volume
+* No per-transaction costs to protocol
+* High-margin business model
 
 ### Secondary Revenues (Future)
 
 **Potential Revenue Sources**:
-- Premium API tier for developers
-- Advanced analytics/reporting services
-- Liquidity provider rewards
-- Integration partnerships
-- Governance participation
 
----
+* Premium API tier for developers
+* Advanced analytics/reporting services
+* Liquidity provider rewards
+* Integration partnerships
+* Governance participation
+
+***
 
 ## Cost Structure
 
 ### Fixed Costs
 
 **Smart Contract Deployment**:
-- One-time: ~$50,000 (initial deployment gas)
-- No recurring deployment costs
-- Costs decrease as network scales
+
+* One-time: \~$50,000 (initial deployment gas)
+* No recurring deployment costs
+* Costs decrease as network scales
 
 ### Variable Costs
 
 **Minimal Operational Overhead**:
-- No servers to maintain
-- No databases to operate
-- No staff (initially)
-- No ongoing infrastructure bills
+
+* No servers to maintain
+* No databases to operate
+* No staff (initially)
+* No ongoing infrastructure bills
 
 **Blockchain Network Costs**:
-- Inherent to any on-chain protocol
-- Paid by users (included in transaction gas)
-- Not borne by protocol itself
+
+* Inherent to any on-chain protocol
+* Paid by users (included in transaction gas)
+* Not borne by protocol itself
 
 ### Economic Efficiency
 
@@ -147,7 +158,7 @@ MonBridge Costs:
 └─ Operating margin: 95%+ of fees retained
 ```
 
----
+***
 
 ## Profitability Analysis
 
@@ -171,6 +182,7 @@ Year 3: $1-2B annual (breakeven achieved in Q1)
 ### Growth Scenarios
 
 **Conservative Scenario (Year 1)**:
+
 ```
 Monthly Volume: $100M
 Fee Revenue: $100,000/month
@@ -181,6 +193,7 @@ Focus: User acquisition and venue integration
 **Scenario Comparison**:
 
 Year 2 - Conservative:
+
 ```
 Monthly Volume: $300-500M
 Fee Revenue: $100-150K/month
@@ -190,6 +203,7 @@ Status: Still investing, not profitable
 ```
 
 Year 3 - Realistic:
+
 ```
 Monthly Volume: $1-1.5B
 Fee Revenue: $300-450K/month
@@ -199,6 +213,7 @@ Status: Approaching sustainability
 ```
 
 Year 5+ - Mature (If Everything Works):
+
 ```
 Monthly Volume: $3-5B (IF becomes dominant)
 Fee Revenue: $900K-1.5M/month
@@ -209,13 +224,14 @@ Status: Sustainable, self-funding
 
 **Reality Check**: These are ambitious but realistic. DeFi is competitive, market cycles exist, regulatory risks remain.
 
----
+***
 
 ## Fee Justification
 
 ### Value Provided vs. Cost
 
 **What Users Get for 0.1% Fee**:
+
 ```
 1. Best-in-class price aggregation
    Without MonBridge, users pay:
@@ -240,16 +256,16 @@ MonBridge 0.1% fee << Typical hidden costs (1.5%)
 
 ### Competitive Positioning
 
-| Service | Fee | Notes |
-|---------|-----|-------|
-| **Manual Trading** | ~1.0% | User time, suboptimal execution |
-| **Centralized Exchange** | 0.1% | Limited to their tokens |
-| **Traditional Aggregator** | 0.05% | But: Server outage risk |
-| **MonBridge** | 0.1% | Decentralized, always available |
+| Service                    | Fee    | Notes                           |
+| -------------------------- | ------ | ------------------------------- |
+| **Manual Trading**         | \~1.0% | User time, suboptimal execution |
+| **Centralized Exchange**   | 0.1%   | Limited to their tokens         |
+| **Traditional Aggregator** | 0.05%  | But: Server outage risk         |
+| **MonBridge**              | 0.1%   | Decentralized, always available |
 
 **Positioning**: Slightly higher fee offset by superior reliability and transparency.
 
----
+***
 
 ## Fee Governance
 
@@ -268,6 +284,7 @@ Purpose: Initial flexibility for protocol optimization
 ### Future Model (Decentralized)
 
 **Potential Governance Evolution**:
+
 ```
 Protocol Token Distribution
 ├─ Community voting on fee structure
@@ -282,19 +299,21 @@ Benefits:
 - Enables community involvement
 ```
 
----
+***
 
 ## Fee Withdrawal & Treasury Management
 
 ### Fee Accumulation
 
 **On-Chain Tracking**:
+
 ```solidity
 uint public feeAccumulatedETH           // ETH fees
 mapping(address => uint) feeAccumulated // Token fees by address
 ```
 
 **Example Accumulation**:
+
 ```
 Day 1: 1000 USDC fees accumulated
 Day 2: 500 USDC + 0.5 ETH fees accumulated
@@ -309,6 +328,7 @@ Total Treasury:
 ### Fee Withdrawal
 
 **Owner-Authorized Withdrawal**:
+
 ```solidity
 function withdrawFees() external onlyOwner {
     // Transfers accumulated feeAccumulatedETH to owner
@@ -318,19 +338,21 @@ function withdrawFees() external onlyOwner {
 ```
 
 **Treasury Uses**:
-- Protocol development and maintenance
-- Security audits and monitoring
-- Team operations
-- Community incentives
-- Liquidity provider rewards
 
----
+* Protocol development and maintenance
+* Security audits and monitoring
+* Team operations
+* Community incentives
+* Liquidity provider rewards
+
+***
 
 ## Economic Incentives
 
 ### User Incentives
 
 **Why Users Use MonBridge**:
+
 1. **Better Execution**: Best available pricing through aggregation
 2. **Lower Total Cost**: 0.1% fee + reduced slippage < alternatives
 3. **Always Available**: 24/7 reliable service (vs. servers going down)
@@ -340,6 +362,7 @@ function withdrawFees() external onlyOwner {
 ### Venue Incentives
 
 **Why DEX Venues Support MonBridge**:
+
 1. **Increased Volume**: Routing traffic from aggregation
 2. **Better Pricing**: Incentive-aligned routing to quality venues
 3. **Network Effects**: More aggregators mean more users
@@ -348,57 +371,61 @@ function withdrawFees() external onlyOwner {
 ### Developer Incentives
 
 **Why Builders Integrate MonBridge**:
+
 1. **Easy Integration**: Simple API to add DEX functionality
 2. **Consolidated Liquidity**: Single integration spans multiple venues
 3. **Optimized Routing**: Built-in algorithms handle complexity
 4. **Fee Sharing** (future): Potential revenue share for integrators
 
----
+***
 
 ## Sustainability Analysis
 
 ### Long-Term Viability
 
 **Positive Factors**:
-- ✅ Scalable business model (marginal cost ~0)
-- ✅ Network effects (more users = more liquidity = better execution)
-- ✅ No ongoing infrastructure costs
-- ✅ Protocol exists indefinitely on blockchain
-- ✅ Strong demand for reliable aggregation
+
+* ✅ Scalable business model (marginal cost \~0)
+* ✅ Network effects (more users = more liquidity = better execution)
+* ✅ No ongoing infrastructure costs
+* ✅ Protocol exists indefinitely on blockchain
+* ✅ Strong demand for reliable aggregation
 
 **Risk Factors**:
-- ⚠️ Competition from other aggregators
-- ⚠️ DEX protocol changes could require updates
-- ⚠️ Regulatory changes in crypto markets
-- ⚠️ Token economics volatility
+
+* ⚠️ Competition from other aggregators
+* ⚠️ DEX protocol changes could require updates
+* ⚠️ Regulatory changes in crypto markets
+* ⚠️ Token economics volatility
 
 ### Revenue Diversification
 
-**Current**: Primarily swap volume fees  
+**Current**: Primarily swap volume fees\
 **Future Opportunities**:
-- Premium features/analytics
-- Integration partnerships
-- Liquidity provider rewards
-- Governance participation
-- Cross-chain bridge fees
 
----
+* Premium features/analytics
+* Integration partnerships
+* Liquidity provider rewards
+* Governance participation
+* Cross-chain bridge fees
+
+***
 
 ## Comparison: Economics vs. Alternatives
 
-| Metric | Centralized Agg. | MonBridge |
-|--------|------------------|-----------|
-| **Fee** | 0.05% | 0.1% |
-| **Infrastructure Cost** | High ($200K+/month) | Low ($200K/month team) |
-| **Outage Risk** | High - Servers fail | None - On-chain only |
-| **Breakeven Timeline** | Already profitable | Year 2-3 |
-| **Long-term Scalability** | Limited by infrastructure | Scales with blockchain |
-| **Total User Cost** | 0.05% + 0.3% slippage | 0.1% + 0.1% slippage |
-| **Uptime Guarantee** | 99% (server-dependent) | 99.99% (blockchain-dependent) |
+| Metric                    | Centralized Agg.          | MonBridge                     |
+| ------------------------- | ------------------------- | ----------------------------- |
+| **Fee**                   | 0.05-0.3%                 | 0.1%                          |
+| **Infrastructure Cost**   | High ($200K+/month)       | Low ($200K/month team)        |
+| **Outage Risk**           | High - Servers fail       | None - On-chain only          |
+| **Breakeven Timeline**    | Already profitable        | Year 2-3                      |
+| **Long-term Scalability** | Limited by infrastructure | Scales with blockchain        |
+| **Total User Cost**       | 0.05% + 0.3% slippage     | 0.1% + 0.1% slippage          |
+| **Uptime Guarantee**      | 99% (server-dependent)    | 99.99% (blockchain-dependent) |
 
 **Key Insight**: MonBridge's higher fee is offset by better execution and guaranteed availability. Total cost to user is likely lower.
 
----
+***
 
 ## Financial Projections
 
@@ -426,7 +453,6 @@ Q4:
 - Year 1 target: $100-150K annual revenue
 ```
 
-
 ### Year 2: Growth Phase
 
 ```
@@ -453,6 +479,7 @@ Market Share Reality:
 ```
 
 **Long-term (5+ Years)**:
+
 ```
 IF protocol becomes ecosystem standard:
 - Daily volume: $1-5B possible
@@ -460,6 +487,6 @@ IF protocol becomes ecosystem standard:
 - But: Competitive landscape, market cycles will limit this
 ```
 
----
+***
 
 **Next**: See [Use Cases](08-use-cases.md) to understand market opportunities driving economics.
