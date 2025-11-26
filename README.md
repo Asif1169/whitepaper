@@ -1,8 +1,8 @@
 # Executive Summary
 
-## MonBridge: Fully Decentralized DEX Aggregation
+## MonBridgeDex: Fully Decentralized DEX Aggregation
 
-MonBridge represents a next-generation **fully decentralized** liquidity aggregation protocol designed to solve the critical failure modes of traditional centralized aggregators.
+MonBridgeDex represents a next-generation **fully decentralized** liquidity aggregation protocol designed to solve the critical failure modes of traditional centralized aggregators.
 
 ### The Critical Distinction
 
