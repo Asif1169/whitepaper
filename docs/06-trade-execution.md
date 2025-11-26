@@ -532,13 +532,13 @@ Result: User unaffected, no funds transferred
 
 ## 8. Performance & Gas Optimization
 
-### Single-Hop vs Multi-Hop Gas Cost
+### Single-Hop vs Multi-Hop Gas Cost ( MONAD)
 
 ```
-Single-Hop Trade Gas: ~150,000 gas (~$3-10)
-Multi-Hop Trade Gas: ~250,000 gas ($5-15)
-Split Trade (2 venues) Gas: ~350,000 gas ($10-30)
-Split Trade (4 venues) Gas: ~650,000 gas ($20-60)
+Single-Hop Trade Gas: ~150,000 gas (~$0.005-0.01)
+Multi-Hop Trade Gas: ~250,000 gas ($0.01-0.02)
+Split Trade (2 venues) Gas: ~350,000 gas ($0.02-0.05)
+Split Trade (4 venues) Gas: ~650,000 gas ($0.05-0.1)
 
 Gas varies by:
 - Network congestion
