@@ -402,7 +402,7 @@ function withdrawFees() external onlyOwner {
 
 ## Financial Projections
 
-### Year 1 (Conservative, Realistic)
+### Year 1 (Conservative)
 
 ```
 Q1 (Launch): 
