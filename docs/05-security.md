@@ -438,7 +438,6 @@ event SwapExecuted(
 
 ⚠️ **Oracle Manipulation**: TWAP is 30-minute average (configurable)  
 ⚠️ **Venue Risk**: Depends on quality of integrated DEX venues  
-⚠️ **Slippage**: Cannot eliminate price impact for large trades  
 ⚠️ **User Error**: Cannot prevent user from setting wrong slippage tolerance  
 
 ### Risk Assessment
