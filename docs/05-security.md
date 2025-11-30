@@ -436,7 +436,6 @@ event SwapExecuted(
 
 ### Inherent Limitations
 
-⚠️ **Oracle Manipulation**: TWAP is 30-minute average (configurable)  
 ⚠️ **Venue Risk**: Depends on quality of integrated DEX venues  
 ⚠️ **Slippage**: Cannot eliminate price impact for large trades  
 ⚠️ **User Error**: Cannot prevent user from setting wrong slippage tolerance  
@@ -445,8 +444,6 @@ event SwapExecuted(
 
 | Risk | Severity | Mitigation |
 |------|----------|-----------|
-| **Reentrancy** | High | State lock mechanism |
-| **Flash Loan** | High | TWAP oracle validation |
 | **Bad Token** | Medium | Blacklist + fee detection |
 | **Bad Venue** | Medium | Health monitoring + failover |
 | **User Error** | Low | Clear pricing display |
