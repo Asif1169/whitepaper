@@ -129,7 +129,7 @@ Artificial price spike → Detected as > 5% deviation → Rejected
 
 ## 4. Liquidity Validation
 
-### Minimum Liquidity Requirements
+### Minimum Liquidity Requirements (Currently Disabled)
 
 **Purpose**: Prevent trading through illiquid pools that cause extreme slippage.
 
@@ -144,6 +144,9 @@ Pool B: $500K liquidity → REJECTED
 - Ensures quality venues
 - Reduces slippage
 - Prevents exploitation through illiquid venues
+
+**Current Status**
+Since Monad is a newly launched L1 and many DEXs still have shallow liquidity, this feature is temporarily disabled to ensure swaps always execute reliably. Once ecosystem liquidity matures, the feature will be activated and the current 1M liquidity threshold will be reduced to support a wider range of trading pairs.
 
 ### Venue Quality Assessment
 
