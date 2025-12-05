@@ -10,6 +10,7 @@
 * [Architecture & Design](docs/02-architecture.md)
 * [Core Features](docs/04-features.md)
 * [Trade Execution Models](docs/06-trade-execution.md)
+* [Integration Reference] (docs/12-Integration-Monbridgedex.md)
 
 ## Security & Risk
 
